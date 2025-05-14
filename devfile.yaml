@@ -9,3 +9,9 @@ projects:
         origin: 'https://github.com/sergioenterprisedb/edb-postgres-for-kubernetes-in-openshift.git'
       checkoutFrom:
         revision: main
+components:
+  - name: kubectl-cnp
+    container:
+      image: quay.io/mbang1/edb-workshop:v1
+      memoryLimit: 512Mi
+      command: ['sleep', 'infinity']
