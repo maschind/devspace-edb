@@ -1,5 +1,5 @@
 FROM ubi9:latest
-RUN dnf -y install git bc envsubst; \
+RUN dnf -y install git bc gettext; \
     dnf -y clean all;
 RUN curl -sSfL https://github.com/EnterpriseDB/kubectl-cnp/raw/main/install.sh | sh -s -- -b /usr/local/bin
 ADD oc /usr/local/bin
