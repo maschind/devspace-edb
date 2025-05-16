@@ -6,7 +6,7 @@ ARG WORK_DIR="/projects"
 ENV HOME=${USER_HOME_DIR}
 ENV BUILDAH_ISOLATION=chroot
 
-RUN dnf -y install git bc gettext; \
+RUN dnf -y install git bc gettext procps-ng; \
     dnf -y clean all; \
     mkdir -p ${USER_HOME_DIR} ; \
     mkdir -p ${WORK_DIR} ; \
