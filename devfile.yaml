@@ -1,6 +1,6 @@
 schemaVersion: 2.2.0
 metadata:
-  name: enterprisedb-workshop
+  name: enterprisedb-workshop-$(CHE_WORKSPACE_NAME)
   version: 1.0.0
 projects:
   - name: workshop
