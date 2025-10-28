@@ -24,7 +24,7 @@ Once you launch your DevSpaces instance, you should have the workshop repository
 ### Troubleshooting 
 In case you run the workshop with more than 20 users, it is recommended to extend the cluster beyond the 6 default worker nodes (each 64GB Memory). Simply increase the corresponding machineSet to 7 nodes (or more) to increase capacity: ```oc get MachineSet -A```
 
-Hint: for 30 workshop users 7 nodes are working well. 
+Hint: for 30 workshop users 8 nodes are working well. 
 
 
 
